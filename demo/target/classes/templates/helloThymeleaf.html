@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <div th:if="${age} &gt; 17">
+        Welcome <span th:text="${name}"></span>!
+    </div>
+    <div th:if="${age} &lt;= 17">
+        You are too young!
+    </div>
+</body>
+</html>
